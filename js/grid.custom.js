@@ -696,7 +696,7 @@ $.jgrid.extend({
 					$("tr:first td:eq("+index+")",btd).width( w ); 
 				});
 				// sorting stuff
-				$($t).bind('jqGridOnSortCol.setFrozenColumns', function (index, idxcol) {
+				$($t).bind('jqGridSortCol.setFrozenColumns', function (index, idxcol) {
 
 					var previousSelectedTh = $("tr.ui-jqgrid-labels:last th:eq("+$t.p.lastsort+")",$t.grid.fhDiv), newSelectedTh = $("tr.ui-jqgrid-labels:last th:eq("+idxcol+")",$t.grid.fhDiv);
 
